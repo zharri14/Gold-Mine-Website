@@ -1,0 +1,58 @@
+<%- include('../partials/header.ejs')%>
+
+    <div class="webpage">
+        <h1><%=user.firstName%>'s Connections</h1>
+        <%if(connections.length){%>
+            <table class="profileTable">
+                <tr>
+                    <th>Connection</th>
+                    <th>Category</th>
+                    <th>Actions</th>
+                </tr>
+            
+                <%connections.forEach(connection => {%>
+                    <tr>
+                        <td><a href = '/connections/<%=connection.id%>'><%=connection.name%></a></td>
+                        <td><%=connection.topic%></td>
+                        <td>
+                            <form>
+                                <button type="submit" formmethod="GET" formaction="/connections/<%= connection.id%>/edit" class="profileButton">Update</button>
+                                <button type= "submit" formmethod= "POST" formaction="/connections/<%= connection.id%>?_method=DELETE" class="profileButton">Delete</button>
+                            </form>
+                        </td>
+                    </tr>
+                <%});%>
+            </table>
+            
+        <%} else{%>
+            <p>You have not created any connections</p>
+        <%}%>
+
+
+        <h1><%=user.firstName%>'s RSVPs</h1>
+        <%if(rsvps.length){%>
+            <table class="profileTable">
+                <tr>
+                    <th>Connection</th>
+                    <th>Category</th>
+                    <th>Going?</th>
+                </tr>
+            
+                <%rsvps.forEach(rsvp => {%>
+                    <tr>
+                        <td><%=rsvp.connection.name%></a></td>
+                        <td><%=rsvp.connection.topic%></td>
+                        <td><%=rsvp.status%></td>
+                    </tr>
+                <%});%>
+            </table>
+        
+            
+        <%} else{%>
+            <p>You have not RSVP'd for any connections</p>
+        <%}%>
+
+
+    </div>
+
+<%- include('../partials/footer.ejs')%>

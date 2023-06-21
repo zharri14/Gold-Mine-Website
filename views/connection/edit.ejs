@@ -1,0 +1,56 @@
+<%- include('../partials/header.ejs')%>
+<div class = "webpage">
+    <form method = 'POST' action = '/connections/<%= connection.id%>?_method=PUT'>
+        <table>
+            <tr>
+                <td><label for="topic">Topic:</label></td>
+                <td><input type="text" id="topic" value="<%= connection.topic%>" name="topic" required><br></td>
+            </tr>
+
+            <tr>
+                <td><label for="name">Title:</label></td>
+                <td><input type="text" id="name" value="<%= connection.name%>" name="name" required><br></td>
+            </tr>
+
+            <tr>
+                <td><label for="details">Details:</label></td>
+                <td><input type="text" id="details" value="<%= connection.description%>" name="description" required minlength="10"><br></td>
+            </tr>
+
+            <tr>
+                <td><label for="location">Location:</label></td>
+                <td><input type="text" id="location" value="<%= connection.location%>" name="location" required><br></td>
+            </tr>
+
+            <tr>
+                <td><label for="date">Date:</label></td>
+                <td><input type="date" id="date" value="<%= connection.date%>" name="date" required><br></td>
+            </tr>
+
+            <tr>
+                <td><label for="host">Host:</label></td>
+                <td><input type="text" id="host" value="<%= connection.host%>" name="host" required><br></td>
+            </tr>
+
+            <tr>
+                <td><label for="startTime">Start Time:</label></td>
+                <td><input type="time" id="startTime" value="<%= connection.startTime%>" name="startTime" required><br></td>
+            </tr>
+
+            <tr>
+                <td><label for="endTime">End Time:</label></td>
+                <td><input type="time" id="endTime" value="<%= connection.endTime%>" name="endTime" required><br></td>
+            </tr>
+
+            <tr>
+                <td><label for="image">Image URL:</label></td>
+                <td><input type="text" id="image" value="<%= connection.image%>" name="image" required><br></td>
+            </tr>
+        </table>   
+        
+        <input type="submit" value="Create Connection">
+
+    </form>
+
+    </div>
+    <%- include('../partials/footer.ejs')%>

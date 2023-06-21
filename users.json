@@ -1,0 +1,46 @@
+[{
+  "_id": {
+    "$oid": "6390d76ffedada2037e6a779"
+  },
+  "firstName": "Zack",
+  "lastName": "Harris",
+  "email": "project@gmail.com",
+  "password": "$2b$10$Bkq3GNdW.6xAZgaoN0/QVevXB53bV6oz4AkX2S2POXXxJ6RUnsGJG",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6390d9f8fedada2037e6a79d"
+  },
+  "firstName": "Matt",
+  "lastName": "Olson",
+  "email": "final@outlook.com",
+  "password": "$2b$10$BVSEsNkz4ZRPmAd48O.Txulfu4W/Fg83QPEzZEr3d5eekvgpZp/1q",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6392890b804775f7cf03845b"
+  },
+  "firstName": "RSVP",
+  "lastName": "1",
+  "email": "rsvp1@rsvp.com",
+  "password": "$2b$10$BuAsvDRdDkkjD9504oRZMORpB574jLJUY4BGCs9pA.GaWBzTsL0gm",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63928ca232252329830e3344"
+  },
+  "firstName": "RSVP",
+  "lastName": "2",
+  "email": "rsvp2@rsvp.com",
+  "password": "$2b$10$.LyKlFilTbtEesoddAvhg.b.ou3eAkjuiyJ/ZlJV3w1VVp3fwzSri",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63928cd632252329830e3376"
+  },
+  "firstName": "RSVP",
+  "lastName": "3",
+  "email": "rsvp3@rsvp.com",
+  "password": "$2b$10$x.rBrrPaGH62hnfU4jd65.xWVso7mllYZe5EiLUbkyD2C.EDoG6ey",
+  "__v": 0
+}]

@@ -1,0 +1,97 @@
+[{
+  "_id": {
+    "$oid": "639373b4b59763695adaf64a"
+  },
+  "topic": "Mens Basketball",
+  "name": "12-10 vs Detroit Mercy",
+  "location": "Halton Arena",
+  "description": "The Forty Niners take on the Detroit Mercy Titans. The Niners currently sit at 7-2 after their comeback victory against the App State Mountaineers. This is a rematch from earlier this season, where the Titans came out victorious 70-49.",
+  "date": "2022-12-10",
+  "startTime": "14:00",
+  "endTime": "16:00",
+  "image": "https://pbs.twimg.com/media/FjBBAYHUcAIiDsV?format=jpg&name=small",
+  "host": {
+    "$oid": "6390d76ffedada2037e6a779"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6393742ad8df600dacf8a00e"
+  },
+  "topic": "Mens Basketball",
+  "name": "12-29 vs MTSU",
+  "location": "Halton Arena",
+  "description": "The Forty Niners take on the Mustangs of Middle Tennessee. In their last meeting, the Niners were able to win 60-56. Come show out for this conference matchup.",
+  "date": "2022-12-29",
+  "startTime": "18:00",
+  "endTime": "20:00",
+  "image": "https://pbs.twimg.com/media/FixxhL3WIAIdMms?format=jpg&name=900x900",
+  "host": {
+    "$oid": "6390d76ffedada2037e6a779"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63937459d8df600dacf8a019"
+  },
+  "topic": "Womens Basketball",
+  "name": "12-11 vs Wake Forest",
+  "location": "Halton Arena",
+  "description": "Come pack Halton as the Lady Forty Niners take on ACC foe Wake Forest. Currently, the Niners sit at a 4-2 record as they come of a conference championship last season.",
+  "date": "2022-12-11",
+  "startTime": "14:00",
+  "endTime": "16:00",
+  "image": "https://pbs.twimg.com/media/FjQLvoxVsAExlKo?format=jpg&name=large",
+  "host": {
+    "$oid": "6390d76ffedada2037e6a779"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "639374fad8df600dacf8a034"
+  },
+  "topic": "Mens Basketball",
+  "name": "12-31 vs LA Tech",
+  "location": "Halton Arena",
+  "description": "Come show out at Halton Arena as the Niner take on conference foe LA Tech. This is a wonderful way to spend your New Years eve afternoon.",
+  "date": "2022-12-31",
+  "startTime": "14:00",
+  "endTime": "16:00",
+  "image": "https://pbs.twimg.com/media/FixiRhSVsAAYDAA?format=jpg&name=4096x4096",
+  "host": {
+    "$oid": "6390d9f8fedada2037e6a79d"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63937580d8df600dacf8a045"
+  },
+  "topic": "Womens Basketball",
+  "name": "12-19 vs UAB",
+  "location": "Halton Arena",
+  "description": "Come watch as the Lady Forty Niners take on the UAB Blazers. The game is Education Day so admission is FREE. No reason not to come support your fellow Niners.",
+  "date": "2022-12-19",
+  "startTime": "11:00",
+  "endTime": "13:00",
+  "image": "https://pbs.twimg.com/media/FjfWbs1UYAE3UFp?format=jpg&name=large",
+  "host": {
+    "$oid": "6390d9f8fedada2037e6a79d"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "639375bfd8df600dacf8a053"
+  },
+  "topic": "Womens Basketball",
+  "name": "12-21 at Davidson",
+  "location": "Halton Arena",
+  "description": "Come make Davidson green as we take on the rivals from across town. Lets continue what the men did earlier this season with an overtime buzzer beater to seal the victory.",
+  "date": "2022-12-21",
+  "startTime": "16:00",
+  "endTime": "18:00",
+  "image": "https://pbs.twimg.com/media/FhuhiRkUUAEbR1D?format=jpg&name=4096x4096",
+  "host": {
+    "$oid": "6390d9f8fedada2037e6a79d"
+  },
+  "__v": 0
+}]

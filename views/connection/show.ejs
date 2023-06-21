@@ -1,0 +1,50 @@
+<%- include('../partials/header.ejs')%>
+
+    <div class="webpage">
+        <div id="rightConnectionDiv">
+            <%if(!user) {%>
+                <form>
+                    <p class="RSVPText"><%= connectionFormatted.counter%> member(s) RSVP'd.</p>
+                    <p class="RSVPText">RSVP to attend!</p>
+                    <button type="submit" formmethod="POST" formaction="/connections/<%= connectionFormatted.id%>/rsvpYes" id="yesButton">Yes</button>
+                    <button type= "submit" formmethod= "POST" formaction="/connections/<%= connectionFormatted.id%>/rsvpMaybe" id="maybeButton">Maybe</button>
+                    <button type="submit" formmethod="POST" formaction="/connections/<%= connectionFormatted.id%>/rsvpNo" id="noButton">No</button>
+                </form>
+            <%} else if(user._id == connectionFormatted.host._id){%>
+                <form>
+                    <button type= "submit" formmethod= "POST" formaction="/connections/<%= connectionFormatted.id%>?_method=DELETE" class="button">Delete</button>
+                    <button type="submit" formmethod="GET" formaction="/connections/<%= connectionFormatted.id%>/edit" class="button">Update</button>
+                </form>
+            <%} else{%>
+                <form>
+                    <p class="RSVPText"><%= connectionFormatted.counter%> member(s) RSVP'd.</p>
+                    <p class="RSVPText">RSVP to attend!</p>
+                    <button type="submit" formmethod="POST" formaction="/connections/<%= connectionFormatted.id%>/rsvpYes" id="yesButton">Yes</button>
+                    <button type= "submit" formmethod= "POST" formaction="/connections/<%= connectionFormatted.id%>/rsvpMaybe" id="maybeButton">Maybe</button>
+                    <button type="submit" formmethod="POST" formaction="/connections/<%= connectionFormatted.id%>/rsvpNo" id="noButton">No</button>
+                </form>
+            <%}%>
+        </div>
+
+        <div id="leftConnectionDiv">
+            <img src="<%= connectionFormatted.image%>" alt="Connection Image" id="indexImage">
+        </div>
+        
+        <div class="connectionList">
+            <p><%= connectionFormatted.name%></p>
+            <p><%= connectionFormatted.topic%></p>
+            <p><%= connectionFormatted.date%></p>
+            <p><%= connectionFormatted.location%></p>
+            <p><%= connectionFormatted.startTime%></p>
+            <p><%= connectionFormatted.endTime%></p>
+            <p>Hosted By: <%= connectionFormatted.host.firstName%> <%= connectionFormatted.host.lastName%></p>
+        </div><br><hr>
+
+        <p class="textCenter"><%= connectionFormatted.description%></p>
+
+
+        
+
+    </div>
+
+<%- include('../partials/footer.ejs')%>
